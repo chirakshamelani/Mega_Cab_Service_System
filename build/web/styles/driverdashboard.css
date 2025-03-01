@@ -1,0 +1,179 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../images/driver.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Dashboard Container */
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    color: #333;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.form-container:hover {
+    transform: scale(1.02);
+}
+
+/* Heading */
+h2 {
+    color: #2E7D32;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #388E3C;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Booking Table Styling */
+.table-container {
+    overflow-x: auto;
+    max-height: 400px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Table Adjustments */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #388E3C;
+    color: white;
+}
+
+/* Table row hover effect */
+tr:hover {
+    background-color: #e8f5e9;
+}
+
+/* Form inside the table cell */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between dropdown and button */
+}
+
+/* Dropdown for status */
+select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    cursor: pointer;
+    background: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* Update Button */
+.update-btn {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.update-btn:hover {
+    background: #f57c00;
+    transform: scale(1.05);
+}
+
+/* Logout Button */
+.logout-btn {
+    background: linear-gradient(to right, #4CAF50, #66BB6A);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.logout-btn:hover {
+    background: linear-gradient(to right, #388E3C, #4CAF50);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    select, .update-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .form-container {
+        width: 95%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    .update-btn, .logout-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
