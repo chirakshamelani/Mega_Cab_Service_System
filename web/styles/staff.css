@@ -1,0 +1,113 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* General body styling */
+body {
+    background-color: #f8f9fa; /* Light background */
+    background-image: url('../images/bgIm6.jpg'); /* Replace with a soft background image if needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333; /* Dark text for contrast */
+}
+
+/* Container box */
+.container {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Light, semi-transparent white */
+    border-radius: 15px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Welcome section */
+.welcome-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #444; /* Slightly darker than the background */
+}
+
+.welcome-section p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* General button styling */
+button {
+    background-color: #007bff; /* Soft blue */
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Different colors for different actions */
+button:nth-child(2) {
+    background-color: #28a745; /* Green for managing customers */
+}
+
+button:nth-child(2):hover {
+    background-color: #218838;
+}
+
+button:nth-child(3) {
+    background-color: #dc3545; /* Red for logout */
+}
+
+button:nth-child(3):hover {
+    background-color: #c82333;
+}
+
+/* Mobile responsive adjustments */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px 24px;
+    }
+}
